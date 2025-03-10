@@ -852,6 +852,11 @@ p{
 }
 .functional-box img{
     margin: 40px 0 32px;
+    max-width: 340px;
+    width: 100%;
+}
+.functional-box + .functional-box img{
+    max-width: 387px;
 }
 .btn-liner{
     border: 1px solid #282828;
@@ -1392,14 +1397,17 @@ footer .menu-scroll a {
     }
 }
 @media (max-width: 575px){
-    .footer-photo {
-        overflow: hidden;
-    }
+
     .word-desc{
         display: none;
     }
     .word-mob{
         display: block;
+    }
+    .footer-photo {
+        right: -20px;
+        max-width: 234px;
+        width: 100%
     }
 
 }
