@@ -674,9 +674,6 @@ p{
 
 .effortless-cnt{
     margin-top: 60px;
-    background-image: url("../img/ugl.png");
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     padding: 50px;
     position: relative;
@@ -692,6 +689,34 @@ p{
     max-width: 830px;
     width: 100%;
     height: 807px;
+}
+.ugl-liner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.ugl-liner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 373px;
+    background-image: url("../img/ugl-left.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ugl-liner:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 373px;
+    background-image: url("../img/ugl-right.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .effortless-info{
     max-width: 498px;
@@ -739,8 +764,7 @@ p{
         top: 52px;
     }
     .effortless-cnt {
-        background-image: unset;
-        padding: 20px 0;
+        padding: 40px 0;
     }
 }
 @media (max-width: 991px){
@@ -762,7 +786,9 @@ p{
     .effortless-info ul li {
         font-size: 16px;
     }
-
+    .ugl-liner{
+        display: none;
+    }
 }
 @media (max-width: 767px){
     .effortless-info {
@@ -1324,7 +1350,9 @@ footer .menu-scroll a {
     font-size: 18px;
     line-height: 21px;
 }
-
+.word-mob{
+    display: none;
+}
 @media (max-width: 1199px){
     .footer-main {
         padding: 90px 0;
@@ -1359,8 +1387,11 @@ footer .menu-scroll a {
     .footer-photo {
         overflow: hidden;
     }
-    .footer-photo img{
-        position: relative;
-        right: -65px;
+    .word-desc{
+        display: none;
     }
+    .word-mob{
+        display: block;
+    }
+
 }
